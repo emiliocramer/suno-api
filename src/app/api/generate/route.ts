@@ -2,6 +2,7 @@ import { NextResponse, NextRequest } from "next/server";
 import { DEFAULT_MODEL, sunoApi } from "@/lib/SunoApi";
 import { corsHeaders } from "@/lib/utils";
 
+export const maxDuration = 250;
 export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
