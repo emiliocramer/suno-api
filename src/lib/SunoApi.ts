@@ -101,7 +101,7 @@ class SunoApi {
    * @param prompt The text prompt to generate audio from.
    * @param make_instrumental Indicates if the generated audio should be instrumental.
    * @param wait_audio Indicates if the method should wait for the audio file to be fully generated before returning.
-   * @returns 
+   * @returns
    */
   public async generate(
     prompt: string,
@@ -263,7 +263,6 @@ class SunoApi {
       }));
     }
   }
-
   /**
    * Generates lyrics based on a given prompt.
    * @param prompt The prompt for generating lyrics.
@@ -288,7 +287,7 @@ class SunoApi {
 
   /**
    * Extends an existing audio clip by generating additional content based on the provided prompt.
-   * 
+   *
    * @param audioId The ID of the audio clip to extend.
    * @param prompt The prompt for generating additional content.
    * @param continueAt Extend a new clip from a song at mm:ss(e.g. 00:30). Default extends from the end of the song.
@@ -367,7 +366,7 @@ class SunoApi {
       prompt: audio.metadata.prompt,
       type: audio.metadata.type,
       tags: audio.metadata.tags,
-      duration: audio.metadata.duration,  
+      duration: audio.metadata.duration,
       error_message: audio.metadata.error_message,
     }));
   }
