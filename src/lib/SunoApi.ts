@@ -152,6 +152,7 @@ class SunoApi {
    * @param wait_audio Indicates if the method should wait for the audio file to be fully generated before returning.
    * @returns A promise that resolves to an array of AudioInfo objects representing the generated audios.
    */
+
   public async custom_generate(
     prompt: string,
     tags: string,
