@@ -34,6 +34,7 @@ export async function POST(req: NextRequest) {
       });
     } catch (error: any) {
       console.error('Error generating custom audio:', error);
+
       console.error('Error generating custom audio:', error.response.data);
       if (error.response.status === 402) {
         return new NextResponse(JSON.stringify({ error: error.response.data.detail }), {
