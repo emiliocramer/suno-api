@@ -25,6 +25,7 @@ export async function POST(req: NextRequest) {
         model || DEFAULT_MODEL,
         Boolean(wait_audio)
       );
+      
       return new NextResponse(JSON.stringify(audioInfo), {
         status: 200,
         headers: {
